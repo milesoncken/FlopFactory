@@ -1,0 +1,25 @@
+.card__container {
+  border: 0.5rem solid white;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  position: absolute;
+  /* left: 30vw; */
+  /* rotate: -20deg; */
+}
+
+.card__spade {
+  display: flex;
+  height: "10%";
+}
+
+.card__card {
+  position: absolute;
+  height: 650vh;
+  opacity: 1;
+  /* width: 550vh; */
+  left: 65vw;
+  top: -85vh;
+  rotate: -20deg;
+}
