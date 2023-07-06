@@ -1,0 +1,135 @@
+.home__container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+.home__background {
+  z-index: -1;
+  opacity: 15%;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  position: absolute;
+
+  height: 100vh;
+  width: 100vw;
+
+  rotate: 0deg;
+  background: url("../../assets/background.png");
+  background-size: 500%;
+  background-repeat: repeat;
+
+  animation-timing-function: linear;
+  animation-name: backgroundEffect;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  49% {
+    background-position: 15% 45%;
+  }
+  50% {
+    background-position: 15% 45%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.home__main {
+  opacity: 100%;
+}
+
+.home__content {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home__title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.home__extra {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: white;
+}
+
+.home__button {
+  box-shadow: 0 2px 10px 0px #ff3434;
+  background-color: #ff3434;
+  color: white;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 5px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* very small screens */
+@media (min-width: 475px) {
+  .home__header__menu {
+    display: none;
+  }
+  .home__header__title {
+    display: flex;
+    padding-right: 2rem;
+  }
+  .home__header__right {
+    display: flex;
+  }
+  .home__header {
+    justify-content: space-between;
+  }
+  .home__background {
+    background-size: 400%;
+  }
+}
+
+/* small screens */
+@media (min-width: 640px) {
+  .home__background {
+    background-size: 300%;
+  }
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+  .home__background {
+    background-size: 250%;
+  }
+}
+
+/* large screens */
+@media (min-width: 1024px) {
+}
+
+/* extra large screens */
+@media (min-width: 1280px) {
+}
+
+/* 2xl screens */
+@media (min-width: 1536px) {
+}

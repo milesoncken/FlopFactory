@@ -6,52 +6,22 @@ import Card from "./components/Card";
 import { gsap } from "gsap";
 
 function Intro() {
-  var tl = gsap.timeline();
+  // var tl = gsap.timeline();
 
-  window.onload = () => {
-    tl.to(".card__card", {
-      transformOrigin: "center center",
-
-      opacity: 1,
-      scale: 0.125,
-      x: "-130vw",
-      y: "-190vh",
-      duration: 1.4,
-      ease: "power4.inOut",
-    })
-      .to(".card__card", {
-        opacity: 0,
-        duration: 0.2,
-      })
-      .to(
-        ".intro__box",
-        {
-          opacity: 1,
-          duration: 0.2,
-        },
-        "<"
-      )
-      .to(
-        ".intro__box",
-        {
-          opacity: 0,
-          duration: 0.8,
-          width: "120vw",
-          overflow: "hidden",
-          left: "-10vw",
-          height: "155vh",
-          top: "-25vh",
-          borderWidth: "4px",
-        },
-        "<"
-      );
-  };
+  // window.onload = () => {
+  //   tl.to(".intro__spade", {
+  //     opacity: 1,
+  //     scale: 2,
+  //   });
+  // };
 
   return (
     <div className='intro__container'>
-      <div className='intro__card'>
-        {/* <Card /> */}
-        <svg
+      <img className='intro__spade' src={spade}></img>
+
+      {/* <div className='intro__card'> */}
+      {/* <Card /> */}
+      {/* <svg
           className='card__card'
           data-name='Layer 1'
           xmlns='http://www.w3.org/2000/svg'
@@ -84,9 +54,8 @@ function Intro() {
             className='spade'
             d='M1471.4,2224.5c114.6-117.1,2.2-202-88.4-146.2,17.1-60.9,26.5-65.7,36.9-81.8h-97.8c12.6,16.2,25.8,20.9,39.1,81.5-92.5-53.1-190,39.5-87.3,146.5,67.1,58.7,93.1,112.3,98.7,119.9C1378,2338.1,1409.4,2282.1,1471.4,2224.5Z'
           />
-        </svg>
-        <div className='intro__box'></div>
-      </div>
+        </svg> */}
+      {/* <div className='intro__box'></div> */}
     </div>
   );
 }

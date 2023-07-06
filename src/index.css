@@ -4,6 +4,17 @@
   overflow: hidden;
 }
 
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 50px 2px #ff3434;
+  cursor: pointer;
+}
+
+.textbtn:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
 /* very small screens */
 @media (min-width: 475px) {
 }

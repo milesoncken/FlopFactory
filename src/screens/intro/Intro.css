@@ -5,14 +5,18 @@
   display: flex;
   position: absolute;
   height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .intro__spade {
   display: flex;
   z-index: 100;
   position: absolute;
-  top: 40vh;
-  left: 45vw;
+  top: 0;
+  left: 0;
+  /* top: 40vh; */
+  /* left: 45vw; */
   opacity: 1;
   scale: 1;
   background-color: red;
@@ -21,11 +25,11 @@
 
 .card__card {
   position: absolute;
-  height: 650vh;
-  opacity: 1;
+  height: 50vh;
+  opacity: 0;
   /* width: 550vh; */
-  left: 65vw;
-  top: -85vh;
+  /* left: 65vw; */
+  /* top: -85vh; */
   rotate: -20deg;
 }
 
@@ -57,11 +61,11 @@
 .intro__box {
   rotate: -20deg;
   position: absolute;
-  top: 9vh;
-  left: 34vw;
+  /* top: 9vh; */
+  /* left: 34vw; */
   border: 8px solid white;
   border-radius: 30px;
-  height: 80vh;
-  width: 28vw;
+  /* height: 80vh; */
+  /* width: 28vw; */
   opacity: 0;
 }
