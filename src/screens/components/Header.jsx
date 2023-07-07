@@ -11,8 +11,12 @@ function Header() {
         <img className='textbtn' src={menu}></img>
       </div>
       <div className='header__left'>
-        <div className='header__title textbtn'>Home</div>
-        <div className='header__title textbtn'>Plans</div>
+        <a href='/' className='header__title textbtn'>
+          Home
+        </a>
+        <a href='/plans' className='header__title textbtn'>
+          Plans
+        </a>
       </div>
       <div className='header__right'>
         <img className='textbtn' src={user}></img>

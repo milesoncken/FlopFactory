@@ -21,7 +21,7 @@
   width: 100vw;
 
   rotate: 0deg;
-  background: url("../../assets/background.png");
+  background: url("../../assets/cardbackgroundsmall.png");
   background-size: 500%;
   background-repeat: repeat;
 
@@ -64,6 +64,7 @@
   text-align: center;
   font-size: 3.5rem;
   font-weight: 900;
+
   color: white;
 }
 
@@ -120,10 +121,16 @@
   .home__background {
     background-size: 250%;
   }
+  .home__extra {
+    font-size: 0.825rem;
+  }
 }
 
 /* large screens */
 @media (min-width: 1024px) {
+  .home__extra {
+    font-size: 1rem;
+  }
 }
 
 /* extra large screens */

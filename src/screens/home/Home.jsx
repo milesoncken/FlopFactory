@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import Header from "../components/Header";
 
 function Home() {
-  // gsap.to(".home__background")
   return (
     <div className='home__container'>
       <div className='home__main'>
