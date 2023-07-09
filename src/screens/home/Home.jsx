@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 
 import { gsap } from "gsap";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 
 function Home() {
   return (

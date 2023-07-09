@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 
 import "./Plans.css";
 function Plans() {
@@ -34,7 +34,7 @@ function Plans() {
                 <li className='plans__free__item'>Beta Updates</li>
               </ul>
             </div>
-            <div className='plans__button btn'>Try Now</div>
+            <div className='plans__button btn'>See More</div>
           </div>
         </div>
       </div>
